@@ -1,0 +1,58 @@
+mca@mca-OptiPlex-5055-Ryzen-CPU:~$ mkdir appu
+mca@mca-OptiPlex-5055-Ryzen-CPU:~$ cd appu
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ vi file.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ cat file.txt
+hai how are you
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ more file.txt
+hai how are you
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ man appu
+No manual entry for appu
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ man mca
+No manual entry for mca
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ man megha
+No manual entry for megha
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ mv file.txt first.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ cat first.txt
+hai how are you
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ ls -a
+.  ..  first.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ cp first.txt file.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ less first.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ echo "hello"
+hello
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ read a
+haiii
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ echo $a
+haiii
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ ls -l file.txt
+-rw-rw-r-- 1 mca mca 16 Feb  4 14:54 file.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ cat first.txt|cut -c 2
+a
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ find -m file.txt
+find: unknown predicate `-m'
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ find -name file.txt
+./file.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ wc file.txt
+ 1  4 16 file.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ wc -l file.txt
+1 file.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ paste first.txt file.txt
+hai how are you	hai how are you
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ head -c 5 first.txt
+hai hmca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ tail -c 5 first.txt
+ you
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ expr 5 + 5
+10
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ chmod 777 file.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ date file.txt
+date: invalid date ‘file.txt’
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ grep ai first.txt
+hai how are you
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ sudo useradd -m anu
+[sudo] password for mca: 
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ sudo chown anu first.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ ls -l
+total 8
+-rwxrwxrwx 1 mca mca 16 Feb  4 14:54 file.txt
+-rw-rw-r-- 1 anu mca 16 Feb  4 14:51 first.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/appu$ 

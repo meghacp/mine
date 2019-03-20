@@ -1,0 +1,29 @@
+touch f21.txt
+echo "enter contenets of first file"
+cat >> f21.txt
+echo "---------------------------------"
+touch f22.txt
+echo "enter contenets of second file"
+cat >> f22.txt
+echo "---------------------------------"
+touch f23.txt
+echo "enter contenets of first file"
+cat >> f23.txt
+echo "---------------------------------"
+echo "first three columns are:"
+cut -b 1,2,3 f21.txt;
+echo
+cat f21.txt >> f22.txt;
+cat f22.txt >> f23.txt;
+echo echo "files first and second are redirected to third"
+echo "contents of third now"
+cat f23.txt
+echo "----------------------------------------"
+echo "enter the string to be searched in the file f23"
+read s
+if grep $s f23.txt
+then
+ echo "string found"
+else
+echo "not found"
+fi

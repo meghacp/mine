@@ -1,0 +1,55 @@
+mca@mca-OptiPlex-5055-Ryzen-CPU:~$ cd meghu
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ echo hai>>shell.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ ct new.txt
+ct: command not found
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ cat shell.txt
+
+hai hello gud morning
+Mon Feb  4 14:35:17 IST 2019
+hai
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ echo hai>shell.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ cat shell.txt
+hai
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ ls|more
+first.txt~
+shell1.txt
+shell.txt
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ who|sort
+mca      :0           2019-02-04 14:19 (:0)
+mca      pts/1        2019-02-04 14:41 (:0)
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ sudo useradd -m anju
+[sudo] password for mca: 
+useradd: user 'anju' already exists
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ sudo useradd -m kunju
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ sudo useradd -m devu
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ sudo useradd -m divya
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ sudo userdel kunju
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ sudo usermod -p abc devu
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ sudo groupadd stud
+groupadd: group 'stud' already exists
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ sudo groupadd stud1
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ usermode -g stud devu
+No command 'usermode' found, did you mean:
+ Command 'usermod' from package 'passwd' (main)
+usermode: command not found
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ usermod -g stud devu
+usermod: Permission denied.
+usermod: cannot lock /etc/passwd; try again later.
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ usermod -g stud divya
+usermod: Permission denied.
+usermod: cannot lock /etc/passwd; try again later.
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ sudo usermod -L devu
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ sudo usermod -U devu
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ usermod -g stud1 devu
+usermod: Permission denied.
+usermod: cannot lock /etc/passwd; try again later.
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ usermod -g stud1 divya
+usermod: Permission denied.
+usermod: cannot lock /etc/passwd; try again later.
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ sudo usermod -g stud1 divya
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ sudo usermod -e 2005-04-30 divya
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ sudo usermod -f 6 divya
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ cat shell.txt
+hai
+mca@mca-OptiPlex-5055-Ryzen-CPU:~/meghu$ 
+
